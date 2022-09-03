@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Carnival</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+
+    <!-- Bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/a8162db7fd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar bg-dark px-2 sticky-top">
+      <div class="container-fluid justify-content-start">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logo.png"
+            alt=""
+            width="45"
+            height="45"
+            class="d-inline-block align-text-top"
+          />
+          <span class="pt-4 site-name animate__animated animate__rubberBand">
+            Movie Carnival
+          </span>
+        </a>
+
+        <!-- Search Bar-->
+        <div id="search-bar" class="mx-auto">
+          <form action="" autocomplete="off">
+            <input
+              type="search"
+              placeholder="Search "
+              id="search"
+              autocomplete="off"
+            />
+
+            <button id="search-btn">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </button>
+          </form>
+        </div>
+
+        <div id="show-favourites"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </nav>
+
+    <div id="super-container" class="d-flex justify-content-between">
+      <!-- MAIN  SECTION-->
+      <main id="main-section">
+        <!-- Suggestions container-->
+        <div id="Suggestions-container" class="d-flex">
+          <p id="empty-search-text" class="text-muted fs-1 pt-5 ms-4">
+            Your search results will appear hear!
+          </p>
+
+          <div id="card-container">
+            <!-- <a href="movie.html" data-id = "spider-man" class="text-decoration">
+            <div class="card my-2" data-id = "spider-man">
+              <img
+                src=""
+                class="card-img-top"
+                alt="..."
+                data-id = "spider-man"
+              />
+              <div class="card-body text-start">
+                <h5 class="card-title" >
+                  <a href="movie.html" data-id = "spider-man"> spider-man </a>
+                </h5>
+
+                <p class="card-text">
+                  <i class="fa-solid fa-star">
+                    <span id="rating">&nbsp;7.8</span>
+                  </i>
+
+                  <button class="fav-btn">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </p>
+              </div>
+            </div>
+          </a> -->
+          </div>
+        </div>
+      </main>
+
+      <!-- FAVORITES SECTION -->
+      <section id="favorites-section" class="animate__animated">
+        <h2>Favorites</h2>
+
+        <div id="empty-fav-text">
+          <p class="fs-5 mx-3 text-muted">
+            Click on <i class="fa-heart fa-solid text-muted"></i> icon of movies
+            to add.
+          </p>
+        </div>
+
+        <div id="fav-movies-container" class=".flex-column mx-auto">
+          <!-- <div
+            class="fav-movie-card d-flex justify-content-between align-content-center my-2"
+          >
+            <img
+              src=""
+              alt=""
+              class="fav-movie-poster"
+            />
+            <div class="movie-card-details">
+              <p class="movie-name mt-3 mb-0">
+                spider-man: No way home 
+              </p>
+              <small class="text-muted">2018</small>
+            </div>
+
+            
+
+            <div class="delete-btn">
+              <i class="fa-solid fa-trash-can" data-id="spider-man"></i>
+            </div>
+
+          </div> -->
+        </div>
+      </section>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+/* CSS Variables */
+:root {
+  --default-text-color: #fff;
+  --logo-color: rgb(253, 206, 35);
+  --page-background-color: #2c3333;
+  --card-text-color: rgb(232, 233, 243);
+  --info-color: #7dabef;
+}
+
+body {
+  background-color: var(--page-background-color);
+  color: var(--default-text-color);
+}
+
+/* NAVBAR */
+.fa-star {
+  color: var(--logo-color);
+}
+
+.site-name {
+  color: var(--logo-color);
+  position: absolute;
+  top: 0px;
+}
+
+/* Movie card*/
+.card {
+  border: 0;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 0, 0) 0%,
+    rgb(64, 64, 64) 90.2%
+  );
+  box-shadow: 0px 16px 24px 2px hsla(0, 0%, 0%, 0.14),
+    0px 6px 30px 5px hsla(0, 0%, 0%, 0.12),
+    0px 8px 10px -5px hsla(0, 0%, 0%, 0.2);
+}
+
+.card-text {
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--card-text-color);
+}
+
+.info-type {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--logo-color);
+}
+
+.information {
+  font-weight: 500;
+  font-size: 0.9em;
+  color: var(--info-color);
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 767px) {
+  #poster {
+    margin-top: 1rem;
+    border-radius: 5px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #title {
+    font-size: x-large;
+  }
+
+  h6 {
+    font-size: medium;
+  }
+
+  h5 {
+    font-size: medium;
+  }
+
+  #poster {
+    margin-top: 0px;
+    width: 100%;
+  }
+}
