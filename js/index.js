@@ -12,6 +12,12 @@
   let suggestionList = [];
   let favMovieArray = [];
 
+  searchKeyword.addEventListener("keydown", (event) => {
+    if (event.key == "Enter") {
+      event.preventDefault();
+    }
+  });
+
   function showEmptyText() {
     if (favMoviesContainer.innerHTML == "") {
       emptyFavText.style.display = "block";
@@ -62,7 +68,6 @@
         isPresent = true;
       }
     });
-
 
     if (!isPresent && data.Title != undefined) {
       if (data.Poster == "N/A") {
@@ -195,7 +200,6 @@
   // Handles click events
   async function handleClickListner(e) {
     const target = e.target;
-    
 
     if (target.classList.contains("add-fav")) {
       e.preventDefault();
